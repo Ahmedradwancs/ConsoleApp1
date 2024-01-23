@@ -10,7 +10,7 @@ namespace ConsoleApp1
     {
         // Input Fields
         private String name;
-        private double price =10.0;
+        private double price =100.0;
         private int numOfAdults;
         private int numOfChildren;
 
@@ -20,11 +20,11 @@ namespace ConsoleApp1
         // Read input from the user
         public void ReadInput()
         {
-            Console.WriteLine("Enter the name of the movie: ");
+            Console.WriteLine("Your name please: ");
             name = Console.ReadLine();
-            Console.WriteLine("Enter the number of adults: ");
+            Console.WriteLine("Number of adults: ");
             numOfAdults = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter the number of children: ");
+            Console.WriteLine("Number of children: ");
             numOfChildren = Convert.ToInt32(Console.ReadLine());
         }
 
@@ -36,15 +36,18 @@ namespace ConsoleApp1
         public void ShowResults()
         {
             Console.WriteLine();
-            Console.WriteLine("+++++++++++++++++++++++++");
-            Console.WriteLine($"Movie: {this.name}");
-            Console.WriteLine($"Number of adults: {this.numOfAdults}");
-            Console.WriteLine($"Number of children: {this.numOfChildren}");
-            Console.WriteLine($"Amount to pay: {this.amountToPay}");
-            Console.WriteLine("+++++++++++++++++++++++++");
-        }   
+            Console.WriteLine("+++ Your receipt +++");
+            Console.WriteLine($"+++ Amount to pay: {this.amountToPay}");
+            Console.WriteLine($"+++ Price per ticket: {this.price}");
+            Console.WriteLine($"+++ Thank you {this.name} and please come back! +++");
+
+        }
         public void Start()
         {
+            Console.WriteLine();
+            Console.WriteLine("Welcome to KIDS' FAIR!");
+            Console.WriteLine("Children get always a 75% discount!");
+            Console.WriteLine();
             ReadInput();
             CalculateAmountToPay();
             ShowResults();

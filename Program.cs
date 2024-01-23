@@ -15,6 +15,12 @@
 
             Console.WriteLine("Press Enter to start next part!");
             Console.ReadLine();
+
+            // Create a TicketSeller object
+            TicketSeller ticketSeller = new TicketSeller();
+
+            // Call the Start method of the TicketSeller object
+            ticketSeller.Start();
         }
 
         static void SetupConsoleWindow()

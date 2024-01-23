@@ -9,18 +9,24 @@
 
             // Create a Pet object
             Pet pet = new Pet();
-            
             // Call the Start method
             pet.Start();
+
+            // Create a TicketSeller object
+            TicketSeller ticketSeller = new TicketSeller();
+            // Call the Start method of the TicketSeller object
+            ticketSeller.Start();
+
+            // Create an Album object
+            Album album = new Album();
+            // Call the Start method of the Album object
+            album.Start();
+
 
             Console.WriteLine("Press Enter to start next part!");
             Console.ReadLine();
 
-            // Create a TicketSeller object
-            TicketSeller ticketSeller = new TicketSeller();
 
-            // Call the Start method of the TicketSeller object
-            ticketSeller.Start();
         }
 
         static void SetupConsoleWindow()

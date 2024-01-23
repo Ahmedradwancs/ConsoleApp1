@@ -28,20 +28,25 @@ namespace ConsoleApp1
             numOfChildren = Convert.ToInt32(Console.ReadLine());
         }
 
+        // Calculate the amount to pay
         public void CalculateAmountToPay()
         {
             amountToPay = numOfAdults * price + numOfChildren * price * 0.25;
         }
 
+        // Print the results to the console
         public void ShowResults()
         {
             Console.WriteLine();
             Console.WriteLine("+++ Your receipt +++");
             Console.WriteLine($"+++ Amount to pay: {this.amountToPay}");
             Console.WriteLine($"+++ Price per ticket: {this.price}");
+            Console.WriteLine();
             Console.WriteLine($"+++ Thank you {this.name} and please come back! +++");
 
         }
+
+        // Create the start method
         public void Start()
         {
             Console.WriteLine();

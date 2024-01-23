@@ -15,11 +15,11 @@ namespace ConsoleApp1
         // Read input from the user
         public void ReadAndSavePetData()
         {
-            Console.WriteLine("Enter the name of your pet: ");
+            Console.Write("Enter the name of your pet: ");
             name = Console.ReadLine();
-            Console.WriteLine("Enter the age of your pet: ");
+            Console.Write("Enter the age of your pet: ");
             age = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Is your pet a female (y/n) ? ");
+            Console.Write("Is your pet a female (y/n) ? ");
             if (Console.ReadLine().ToLower() == "y")
             {
                 isFemale = true;

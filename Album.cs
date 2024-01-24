@@ -50,6 +50,7 @@ namespace ConsoleApp1
         // Create the start method
         public void Start()
         {
+            Console.WriteLine();
             Console.WriteLine("Starting the Album Program!");
             Console.WriteLine();
             ReadAlbumName();

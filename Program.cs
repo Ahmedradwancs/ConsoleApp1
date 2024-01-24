@@ -22,14 +22,13 @@
             // Call the Start method of the Album object
             album.Start();
 
-
-            Console.WriteLine("Press Enter to start next part!");
-            Console.ReadLine();
-
             // Create a Library object
             Library library = new Library();
             // Call the Start method of the Library object
             library.Start();
+
+            Console.WriteLine("Press Enter to start next part!");
+            Console.ReadLine();
 
 
         }

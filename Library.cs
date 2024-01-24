@@ -18,7 +18,7 @@ namespace ConsoleApp1
         {
             Console.WriteLine("Please enter your name: ");
             name = Console.ReadLine();
-            Console.WriteLine("Enter the book name: ");
+            Console.WriteLine("Enter the book title you want to borrow: ");
             bookName = Console.ReadLine();
             Console.WriteLine("For how many days you want to borrow this book? ");
             days = Convert.ToInt32(Console.ReadLine());
@@ -35,19 +35,29 @@ namespace ConsoleApp1
         //Display all the data
         public void Display()
         {
-            Console.WriteLine("Your name is: " + name);
-            Console.WriteLine($"The want to borrow {bookName} book. " );
+            Console.WriteLine("**********************************");
+            Console.WriteLine();
+            Console.WriteLine("Check out: ");
+            Console.WriteLine();
+            Console.WriteLine($"Dear {this.name}, ");
+            Console.WriteLine($"You have borrowed {this.bookName} book. " );
+            Console.WriteLine();
             Console.WriteLine("The due date to return the book is: " + CalculateDueDate());
+            Console.WriteLine();
             Console.WriteLine("Thank you for using our library!");
+            Console.WriteLine();
+            Console.WriteLine("**********************************");
         }
         public void Start()
         {
+            Console.WriteLine();
+            Console.WriteLine("**********************************");
+            Console.WriteLine();
             Console.WriteLine("Welcome to the Library!");
             Console.WriteLine();
-            Console.WriteLine("Please enter the following details: ");
             ReadInput();
             Display();
-            Console.ReadLine();
         }
+
     }
 }

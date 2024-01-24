@@ -12,22 +12,35 @@
             // Call the Start method
             pet.Start();
 
+            Console.WriteLine("Press Enter to start next part!");
+            Console.ReadLine();
+
             // Create a TicketSeller object
             TicketSeller ticketSeller = new TicketSeller();
             // Call the Start method of the TicketSeller object
             ticketSeller.Start();
+
+            Console.WriteLine();
+            Console.WriteLine("Press Enter to start next part!");
+            Console.ReadLine();
 
             // Create an Album object
             Album album = new Album();
             // Call the Start method of the Album object
             album.Start();
 
+            Console.WriteLine();
+            Console.WriteLine("Press Enter to start next part!");
+            Console.ReadLine();
+
             // Create a Library object
             Library library = new Library();
             // Call the Start method of the Library object
             library.Start();
 
-            Console.WriteLine("Press Enter to start next part!");
+            Console.WriteLine("Thank you for using my application.");
+            Console.WriteLine();
+            Console.WriteLine("Press Enter to exit the program!");
             Console.ReadLine();
 
 

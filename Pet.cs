@@ -15,9 +15,9 @@ namespace ConsoleApp1
         // Read input from the user
         public void ReadAndSavePetData()
         {
-            Console.Write("Enter the name of your pet: ");
+            Console.Write("What is the name of your pet? ");
             name = Console.ReadLine();
-            Console.Write("Enter the age of your pet: ");
+            Console.Write($"What is {this.name}'s age? ");
             age = Convert.ToInt32(Console.ReadLine());
             Console.Write("Is your pet a female (y/n) ? ");
             if (Console.ReadLine().ToLower() == "y")
@@ -45,6 +45,7 @@ namespace ConsoleApp1
                 Console.WriteLine("He's such a wonderful pup!");
             }
             Console.WriteLine("+++++++++++++++++++++++++");
+            Console.WriteLine();
 
         }
 
@@ -57,6 +58,7 @@ namespace ConsoleApp1
 
             ReadAndSavePetData();
             DisplayPetInfo();
+
         }
     }
 }
